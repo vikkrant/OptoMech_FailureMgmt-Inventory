@@ -11,5 +11,21 @@ To combat this, our solution is twofold:
 - Tracking: Create a central space where all opto-mechanical components can be tracked, functional and broken ones
 - Analyzing: Obtain characteristics about these failures 
 
+
+
 ## Tracking
-[724Ready.xlsx](/724Ready.xlsx) is the central space where all the opto-mechanical component failures found over the course of this project have been recorded. Its comprises of [# Number of tickets from Dr. Berges] and [# Number of tickets from Dr. Fong]
+[724Ready.xlsx](/724Ready.xlsx) is the central space where all the opto-mechanical component failures found over the course of this project have been recorded. Its comprises of [---# Number of tickets from Dr. Berges---] and [---# Number of tickets from Dr. Fong---]
+
+The following characteristics have been captured for each failure:
+
+***The categories below have all been captured with SmarAct components in mind. For example, "Serial Number W/O Production Number" assumes that the user will enter a serial number that contains a dash.***
+
+- Deployment Date: The date a given component entered operations
+- Failure Date: The first recorded instance of said component malfunctioning
+- Time to Failure: Days between deployment date and failure date (not including the failure date)
+- Hutch: The hutch the component is present in (Controls naming convention is used [---SPECIFY THE CONVENTION---])
+- Serial Number W/O Production Number: An alphanumeric string that contains all the characters that are present before the dash in a component's serial number
+- Production Number: A positive integer that indicates when a component was rolled off the assembly line. Present to the right of the dash in a component's serial number
+- PV Base: [---WHAT IS THIS---]
+- Symptoms: The symptoms a failed component displays. [---HOW HAVE THESE BEEN STANDARDIZED---]
+  
