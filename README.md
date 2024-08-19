@@ -44,9 +44,10 @@ Two Targets (Dependent Variables):
 - Time to Failure
 - Symptoms
 
-"Time to Failure" is a continuous variable while "Symptoms" is a discrete variable. Thus, two machine learning models have been set up to analyze these different datatypes: A Linear Regression model and a Naive Bayes model
+"Time to Failure" is a continuous variable while "Symptoms" is a discrete variable. Thus, two machine learning models have been set up to analyze these different datatypes:
 
-Naive Bayes Model:
--  Present in [CLSFN_SYMP.ipynb](/CLSFN.SYMP.ipynb)
--  
-  
+- A Linear Regression model ("Time to Failure") present in [RGRSN_TTF.ipynb](/RGRSN_TTF.ipynb) 
+- A Naive Bayes model ("Symptoms") present in present in [CLSFN_SYMP.ipynb](/CLSFN.SYMP.ipynb)
+- 80% data being used for training and 20% for testing
+- Overfitting exists because of a small dataset and only 20-60% accuracy in results as evidenced by SKLearn's score function
+
