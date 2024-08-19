@@ -46,6 +46,7 @@ Two Targets (Dependent Variables):
 
 "Time to Failure" is a continuous variable while "Symptoms" is a discrete variable. Thus, two machine learning models have been set up to analyze these different datatypes: A Linear Regression model and a Naive Bayes model
 
-Naive Bayes:
-- Can be accessed in [.xlsx](/724Ready.xlsx)
+Naive Bayes Model:
+-  Present in [CLSFN_SYMP.ipynb](/CLSFN.SYMP.ipynb)
+-  
   
