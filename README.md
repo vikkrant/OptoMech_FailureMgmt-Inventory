@@ -25,7 +25,24 @@ The following characteristics have been captured for each failure:
 - Time to Failure: Days between deployment date and failure date (not including the failure date)
 - Hutch: The hutch the component is present in (Controls naming convention is used [---SPECIFY THE CONVENTION---])
 - Serial Number W/O Production Number: An alphanumeric string that contains all the characters that are present before the dash in a component's serial number
-- Production Number: A positive integer that indicates when a component was rolled off the assembly line. Present to the right of the dash in a component's serial number
+- Production Number: A positive integer that indicates when a component was rolled off the assembly line (Present to the right of the dash in a component's serial number)
 - PV Base: [---WHAT IS THIS---]
-- Symptoms: The symptoms a failed component displays. [---HOW HAVE THESE BEEN STANDARDIZED---]
+- Symptoms: The symptoms displayed by a component upon or leading up to failure. These have been standardized using the following list:
+  - Unresponsive
+  - Piezo Damage
+  - Cable Damage
+  - Unknown
+  - Inaccurate Motion
+  - Intermittent Response
+ 
+    
+## Machine Learning Models
+Three Features (Independent Variables):
+- Serial Number W/O Production Number
+- Hutch
+- PV Base
+  
+Two Targets (Dependent Variables):
+- Time to Failure
+- Symptoms
   
