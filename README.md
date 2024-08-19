@@ -52,5 +52,6 @@ Two Targets (Dependent Variables):
 - 80% data being used for training and 20% for testing
 - Overfitting exists because of a small dataset and only 20-60% accuracy in results as evidenced by SKLearn's score function
 
-## Scripts
+## UI Functionality
+[SCRIPTS.ipynb](/SCRIPTS.ipynb) contains several functions that will update the database as users input information into the forms 
 
