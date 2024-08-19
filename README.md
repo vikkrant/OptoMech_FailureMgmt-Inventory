@@ -32,8 +32,9 @@ The following characteristics have been captured for each failure ***(The catego
   - Unknown
   - Inaccurate Motion
   - Intermittent Response
+
+
  
-    
 ## Machine Learning Models
 Three Features (Independent Variables):
 - Serial Number W/O Production Number
@@ -50,4 +51,6 @@ Two Targets (Dependent Variables):
 - A Naive Bayes model ("Symptoms") present in present in [CLSFN_SYMP.ipynb](/CLSFN.SYMP.ipynb)
 - 80% data being used for training and 20% for testing
 - Overfitting exists because of a small dataset and only 20-60% accuracy in results as evidenced by SKLearn's score function
+
+## Scripts
 
