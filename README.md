@@ -24,7 +24,7 @@ The following characteristics have been captured for each failure ***(The catego
 - Hutch: The hutch the component is present in (Controls naming convention is used [---SPECIFY THE CONVENTION---])
 - Serial Number W/O Production Number: An alphanumeric string that contains all the characters that are present before the dash in a component's serial number
 - Production Number: A positive integer that indicates when a component was rolled off the assembly line (Present to the right of the dash in a component's serial number)
-- PV Base: [---WHAT IS THIS---]
+- PV Base: 
 - Symptoms: The symptoms displayed by a component upon or leading up to failure. These have been standardized using the following list:
   - Unresponsive
   - Piezo Damage
