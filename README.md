@@ -16,9 +16,7 @@ To combat this, our solution is twofold:
 ## Tracking
 [724Ready.xlsx](/724Ready.xlsx) is the central space where all the opto-mechanical component failures found over the course of this project have been recorded. Its comprises of [---# Number of tickets from Dr. Berges---] and [---# Number of tickets from Dr. Fong---]
 
-The following characteristics have been captured for each failure:
-
-***The categories below have all been captured with SmarAct components in mind. For example, "Serial Number W/O Production Number" assumes that the user will enter a serial number that contains a dash.***
+The following characteristics have been captured for each failure ***(The categories below have all been captured with SmarAct components in mind. For example, "Serial Number W/O Production Number" assumes that the user will enter a serial number that contains a dash.)***
 
 - Deployment Date: The date a given component entered operations
 - Failure Date: The first recorded instance of said component malfunctioning
@@ -45,4 +43,9 @@ Three Features (Independent Variables):
 Two Targets (Dependent Variables):
 - Time to Failure
 - Symptoms
+
+"Time to Failure" is a continuous variable while "Symptoms" is a discrete variable. Thus, two machine learning models have been set up to analyze these different datatypes: A Linear Regression model and a Naive Bayes model
+
+Naive Bayes:
+- Can be accessed in [.xlsx](/724Ready.xlsx)
   
