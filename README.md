@@ -14,7 +14,7 @@ To combat this, our solution is twofold:
 
 
 ## Tracking
-[Opto-Mechanical Failure Records and Inventory.xlsx](/Opto-MechanicalFailureRecordsandInventory.xlsx) is the space where all the opto-mechanical component failures found over the course of this project have been recorded. Its comprises of data collected from problem tickets gathered by Dr. Anthony Fong and Dr. Adam Berges. 100% of the failures captured were of components manufactured by SmarAct, so the characteristics and their associated values captured may not align with the overall collection of opto-mechanical devices at LCLS.
+[Opto-Mechanical Failure Records and Inventory.xlsx](/Opto-Mechanical_Failure_Records_and_Inventory.xlsx) is the space where all the opto-mechanical component failures found over the course of this project have been recorded. Its comprises of data collected from problem tickets gathered by [Dr. Anthony Fong](/records_AnthonyFong.xlsx) and [Dr. Adam Berges](/records_AdamBerges.pdf). 100% of the failures captured were of components manufactured by SmarAct, so the characteristics and their associated values captured may not align with the overall collection of opto-mechanical devices at LCLS.
 
 The following characteristics have been captured for each failure
 
@@ -25,7 +25,7 @@ The following characteristics have been captured for each failure
 - Serial Number W/O Production Number: An alphanumeric string that contains all the characters that are present before the dash in a component's serial number
 - Production Number: A non-negative integer that indicates when a component was rolled off the assembly line (Present to the right of the dash in a component's serial number)
 - PV Base: An alphanumeric string that represents a component's name and location combined
-- Symptoms: A string that represents the symptoms displayed by a component upon or leading up to failure. These have been standardized using the following list (The key used to standardize them can be found in _______):
+- Symptoms: A string that represents the symptoms displayed by a component upon or leading up to failure. Given that the failure records from our two primary sources, Dr. Berges and Dr. Fong, were captured independently of each other, they vary vastly in the way they record the condition of the failed components. [Dr. Fong's records](/records_AnthonyFong.xlsx) has a "Comment" column that lists the condition of a component while [Dr. Berges' records](/records_AdamBerges.pdf) have "Symptom" and "RCA" (Root cause analysis) columns where the former gives a brief overview of the part's condition while the latter delves into specifics. Since these methods of recording information regarding failure are different, a standardized list of symptoms was created to which these exisiting components were fit. The method used for standardization can be found in [standardized_symptoms_key.pdf](/standardized_symptoms_key.pdf). For Dr. Berges' records, the information in the "RCA" and "Symptom" columns was combined into one column (where information from each file is in its own bullet point) as can be seen in the aformentioned file. The following are the 6 standardized symptoms:
   - Unresponsive
   - Piezo Damage
   - Cable Damage
@@ -53,11 +53,13 @@ Two Targets (Dependent Variables):
 - 80% data being used for training and 20% for testing
 - Overfitting exists because of a small dataset and only 20-60% accuracy in results as evidenced by SKLearn's score function
 
-## UI Functionality
+## Frontend
 [SCRIPTS.ipynb](/SCRIPTS.ipynb) contains several functions that will update the database as users input information into the forms 
 - Binary Encoding Symptoms: One component is capable of displaying more than a single symptom. This function creates an array that has a length equivalent to the number of standardized symptoms and all elements are either 0's or 1's where the element 1 at an index indicates that the symptom represented by that index can be seen in the given component
 - Filtering Components to be Analyzed: Parses through the database and returns an array of the indices of the components that have failed, filtering out inventory components
 - Calculating Ratio of Failed V/S Working Components: Parses through the database, and for each type of component calculates the number of failed units for a specific component, the total amount, and the ratio of failed to working components and then writes these values to the dataframe
 
-## Future 
+## Backend
+
+## Future
 
