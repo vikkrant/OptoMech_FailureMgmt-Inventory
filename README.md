@@ -1,10 +1,10 @@
 # Tracking Inventory and Analyzing Failure for L2SI MODS Opto-Mechanical Components
 
 ## Background
-Currently at LCLS there are no tools in place to keep track of opto-mechanical or optical components. This means that there is no centralized resource that keeps track of the components as they are ordered into LCLS or as they tend to break during their time at the facility (over the course of experiments or in other ways). 
+Currently at LCLS there are no tools in place to keep track of opto-mechanical or optical components. This means that there is no centralized resource that keeps track of the components as they are ordered into LCLS or as they tend to break during their time at the facility. 
 
 This is problematic for two reasons: 
-- Money: Are stages more prone to failure when compared to mounts? If a higher rate of failure is observed in a certain line of stages, is this due to a recurring manufacturing issue or can this be attributed to the environment the component exists in (hutch, upstream/downstream assets etc.)? Currently, questions like these and other related ones are unanswered leading to unfeterred flow of unchecked component failures. Consequently, replacement components are continually being ordered with prices between $2,000-8,000 resulting in a constant outflow of funds without any measures being taken to put an end to this.
+- Money: Are stages more prone to failure when compared to mounts? If a higher rate of failure is observed in a certain line of stages, is this due to a recurring manufacturing issue or can this be attributed to the environment the component exists in (hutch, upstream/downstream assets etc.)? Currently, questions like these and many other related ones are unanswered leading to unfeterred flow of unchecked component failures. Consequently, replacement components are continually being ordered with prices between $2,000-8,000 resulting in a constant outflow of funds without any measures being taken to put an end to this.
 - Time: Since failure is not currently analyzed, scientists are unable to prepare for component failures that might occur during the course of their experiments. The lead time to replace an opto-mechanical component is 12-18 months. So, an experiment's completion can be heavily delayed as scientists wait on replacement parts to be delivered.
 
 To combat this, our solution is twofold:
@@ -14,24 +14,25 @@ To combat this, our solution is twofold:
 
 
 ## Tracking
-[724Ready.xlsx](/724Ready.xlsx) is the central space where all the opto-mechanical component failures found over the course of this project have been recorded. Its comprises of data collected from problem tickets gathered by Dr. Anthony Fong and Dr. Adam Berges
+[Opto-Mechanical Failure Records and Inventory.xlsx](/Opto-Mechanical Failure Records and Inventory.xlsx) is the space where all the opto-mechanical component failures found over the course of this project have been recorded. Its comprises of data collected from problem tickets gathered by Dr. Anthony Fong and Dr. Adam Berges. 100% of the failures captured were of components manufactured by SmarAct, so the characteristics and their associated values captured may not align with the overall collection of opto-mechanical devices at LCLS.
 
-The following characteristics have been captured for each failure ***(The categories below have all been captured with SmarAct components in mind. For example, "Serial Number W/O Production Number" assumes that the user will enter a serial number that contains a dash.)***
+The following characteristics have been captured for each failure
 
 - Deployment Date: The date a given component entered operations
-- Failure Date: The first recorded instance of said component malfunctioning
-- Time to Failure: Days between deployment date and failure date (not including the failure date)
-- Hutch: The hutch the component is present in (Controls naming convention is used [---SPECIFY THE CONVENTION---])
+- Failure Date: The date when said component was first found to be malfunctioning
+- Time to Failure: A non-negative integer that represents the amount of days between deployment date and failure date (not including the failure date)
+- Hutch: An alphanumeric string that represents the location of the component in terms of hutches (Controls naming convention is used: LM1K4 refers to TMO, LM2K2 refers to chemRIXS)
 - Serial Number W/O Production Number: An alphanumeric string that contains all the characters that are present before the dash in a component's serial number
-- Production Number: A positive integer that indicates when a component was rolled off the assembly line (Present to the right of the dash in a component's serial number)
-- PV Base: 
-- Symptoms: The symptoms displayed by a component upon or leading up to failure. These have been standardized using the following list:
+- Production Number: A non-negative integer that indicates when a component was rolled off the assembly line (Present to the right of the dash in a component's serial number)
+- PV Base: An alphanumeric string that represents a component's name and location combined
+- Symptoms: A string that represents the symptoms displayed by a component upon or leading up to failure. These have been standardized using the following list (The key used to standardize them can be found in _______):
   - Unresponsive
   - Piezo Damage
   - Cable Damage
   - Unknown
   - Inaccurate Motion
   - Intermittent Response
+    
 
 
  
