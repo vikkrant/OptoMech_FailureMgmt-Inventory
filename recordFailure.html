@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1> Report Component Failure</h1>
+        <link rel = "stylesheet" href = "indexStyle.css">
+    </head>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        body {
+          font-family:'Courier New', Courier, monospace;
+        }
+        .mb-3 {
+          margin-bottom: 15px;
+        }
+        
+        .main-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 48px;
+        }
+      
+        .form-wrapper {
+          margin: 0 auto;
+          max-width: 570px;
+          width: 100%;
+          background: white;
+          padding-top: 0px;
+          padding-left: 50px;
+        }
+
+        .input-flex {
+          display:inline-block;
+          gap: 20px;
+          margin-bottom: 15px;
+        }
+
+        input {
+          font-family:'Courier New', Courier, monospace;
+          text-align: left;
+          width: 100%;
+          padding: 13px 50px;
+          border-radius: 5px;
+          border: 1px solid #dde3ec;
+          background: white;
+          font-weight: 500;
+          font-size: 16px;
+          color: black;
+          outline: none;
+          resize: none;
+        }
+
+        select {
+          font-family:'Courier New', Courier, monospace;
+          text-align: left;
+          width: 100%;
+          padding: 13px 50px;
+          border-radius: 5px;
+          border: 1px solid #dde3ec;
+          background: white;
+          font-weight: 500;
+          font-size: 16px;
+          color: black;
+          outline: none;
+          resize: none;
+        }
+
+
+        
+        label {
+          font-family: 'Courier New', Courier, monospace;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 24px;
+          display: block;
+          margin-bottom: 10px;
+          white-space: nowrap;
+        }
+      
+      </style>
+
+    <body>
+        <div class="main-wrapper">
+
+            <div class="form-wrapper">
+    
+          
+                <div class="input-flex">
+                  <div>
+                    <label for ="depDate">
+                      Deployment Date
+                    </label>
+                    <input
+                      type="date"
+                      name="depDate"
+                      id="depDate"
+
+                    />
+                  </div>
+                  <div>
+                    <label for="failDate"> Failure Date </label>
+                    <input
+                      type="date"
+                      name="failDate"
+                      id="failDate"
+                    />
+                  </div>
+                </div>
+          
+                <div class="input-flex">
+                  <div>
+                    <label for="Hutch"> Hutch </label>
+                    <select id = "hutchDropdown">
+                        <option value="LM1K4">LM1K4</option>
+                        <option value="LM2K2">LM2K2</option>
+                        <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="serNum"> Serial Number (Do Not Include Production Number)</label>
+                    <select id = "serNum"> 
+                        <option value="SLLV42sc">SLLV42sc</option>
+                        <option value="STT50.8v">STT50.8v</option>
+                        <option value="SR7012l">SR7012l</option>
+                        <option value="STT25.4v">STT25.4v</option>
+                        <option value="SLC1780ds">SLC1780ds</option>
+                        <option value="STT25.4v">STT25.4v</option>
+                        <option value="CLL42lc">CLL42lc</option>
+                        <option value="STT50.8iv">STT50.8iv</option>
+                        <option value="SLC2445ds">SLC2445ds</option>
+                        <option value="STT50.8iv">SLC1740ds</option>
+                        <option value="SLLV42lc">SLLV42lc</option>
+                        <option value="SLC1760ds">SLC1760ds</option>
+                    </select>
+                  </div>
+                </div>
+          
+                <div class="mb-3">
+                  <label for="prodNum">
+                    Production Number
+                  </label>
+                  <input
+                    type="number"
+                    name="prodNum"
+                    id="prodNum"
+                  />
+                </div>
+          
+                <div class="mb-3">
+                  <label for="pvBase">
+                    PV Base
+                  </label>
+                  <input
+                    type="text"
+                    name="pvBase"
+                    id="pvBase"
+                    class="form-input"
+                  />
+                </div>
+          
+
+            </div>
+        </div>
+    </body>
+</html>

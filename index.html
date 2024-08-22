@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>   
+<head>
+    <link rel = "stylesheet" href = "buttonStyle.css">
+</head>
+<style>
+    
+    h1 {
+        font-family: "DM Serif Text", serif;
+        font-size: 90px;
+        font-weight: 1000;
+        font-style: normal;
+        text-align: center;
+        padding-left: 150px;
+        padding-top: 137px;
+        font-family:'Courier New', Courier, monospace;
+    }
+
+    #dropdown1 {
+        padding-left: 700px;
+        padding-bottom: 35px;
+    }
+
+    #dropdown2 {
+        padding-left: 700px;
+    }
+
+    #drp1, #drp2 {
+        font-family:'Courier New', Courier, monospace;
+    }
+
+    #submitButton {
+        padding-left: 740px;
+        padding-top: 50px;
+    }
+
+    
+</style>
+
+<h1>I want to...</h1>
+
+<br/>
+<div id = "dropdown1">
+<select name = "drop1" id = "drp1" onchange = "populate(id,'drp2')">
+    <option value = "selectanoption">Select an Option</option>
+    <option value = "record">Report</option>
+    <option value = "test">Test</option>
+</select>
+</div>
+
+<div id = "dropdown2">
+<select name = "drop2" id = "drp2">
+    <option value = "selectanoption">Select an Option</option>
+</select>
+</div>
+
+<div id = "submitButton">
+<button id="theButton" role="button">Go</button>
+</div>
+
+
+
+
+
+
+<script>
+    function populate(firstDrp, secondDrp) {
+        let firstSelection = document.getElementById(firstDrp)
+        let secondSelection = document.getElementById(secondDrp)
+
+        secondSelection.innerHTML = ""
+        let arr = []
+        if (firstSelection.value == "selectanoption") {
+            arr = ["selectanoption,Select an Option"]
+        } else if (firstSelection.value == "record") {
+            arr = ["selectanoption, Select an Option", "componentfailure, Component Failure", "partinventory,Part Inventory"]
+        } else {
+            arr = ["selectanoption, Select an Option", "timetofailure,Time to Failure", "symptomsoffailure, Symptoms of Failure"]
+        }
+
+        for (let element in arr) {
+            var pair = arr[element].split(",")
+            let newoption = document.createElement("option")
+            newoption.innerHTML = pair[1]
+            newoption.id = pair[0]
+            secondSelection.options.add(newoption)
+        }
+
+    }
+</script>
+
+
+
+</html>
+
