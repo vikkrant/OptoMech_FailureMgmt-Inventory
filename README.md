@@ -14,7 +14,7 @@ To combat this, our solution is twofold:
 
 
 ## Tracking
-[724Ready.xlsx](/724Ready.xlsx) is the central space where all the opto-mechanical component failures found over the course of this project have been recorded. Its comprises of [---# Number of tickets from Dr. Berges---] and [---# Number of tickets from Dr. Fong---]
+[724Ready.xlsx](/724Ready.xlsx) is the central space where all the opto-mechanical component failures found over the course of this project have been recorded. Its comprises of data collected from problem tickets gathered by Dr. Anthony Fong and Dr. Adam Berges
 
 The following characteristics have been captured for each failure ***(The categories below have all been captured with SmarAct components in mind. For example, "Serial Number W/O Production Number" assumes that the user will enter a serial number that contains a dash.)***
 
