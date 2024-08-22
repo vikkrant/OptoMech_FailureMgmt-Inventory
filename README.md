@@ -53,11 +53,13 @@ Two Targets (Dependent Variables):
 - 80% data being used for training and 20% for testing
 - Overfitting exists because of a small dataset and only 20-60% accuracy in results as evidenced by SKLearn's score function
 
-## UI Functionality
+## Frontend
 [SCRIPTS.ipynb](/SCRIPTS.ipynb) contains several functions that will update the database as users input information into the forms 
 - Binary Encoding Symptoms: One component is capable of displaying more than a single symptom. This function creates an array that has a length equivalent to the number of standardized symptoms and all elements are either 0's or 1's where the element 1 at an index indicates that the symptom represented by that index can be seen in the given component
 - Filtering Components to be Analyzed: Parses through the database and returns an array of the indices of the components that have failed, filtering out inventory components
 - Calculating Ratio of Failed V/S Working Components: Parses through the database, and for each type of component calculates the number of failed units for a specific component, the total amount, and the ratio of failed to working components and then writes these values to the dataframe
 
-## Future 
+## Backend
+
+## Future
 
