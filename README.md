@@ -14,7 +14,7 @@ To combat this, our solution is twofold:
 
 
 ## Tracking
-[Opto-Mechanical Failure Records and Inventory.xlsx](/Opto-MechanicalFailureRecordsandInventory.xlsx) is the space where all the opto-mechanical component failures found over the course of this project have been recorded. Its comprises of data collected from problem tickets gathered by Dr. Anthony Fong and Dr. Adam Berges. 100% of the failures captured were of components manufactured by SmarAct, so the characteristics and their associated values captured may not align with the overall collection of opto-mechanical devices at LCLS.
+[Opto-Mechanical Failure Records and Inventory.xlsx](/Opto-Mechanical_Failure_Records_and_Inventory.xlsx) is the space where all the opto-mechanical component failures found over the course of this project have been recorded. Its comprises of data collected from problem tickets gathered by Dr. Anthony Fong and Dr. Adam Berges. 100% of the failures captured were of components manufactured by SmarAct, so the characteristics and their associated values captured may not align with the overall collection of opto-mechanical devices at LCLS.
 
 The following characteristics have been captured for each failure
 
