@@ -44,7 +44,7 @@
 <select name = "drop1" id = "drp1" onchange = "populate(id,'drp2')">
     <option value = "selectanoption">Select an Option</option>
     <option value = "record">Report</option>
-    <option value = "test">Test</option>
+    <option value = "test">Predict</option>
 </select>
 </div>
 
@@ -75,7 +75,7 @@
         } else if (firstSelection.value == "record") {
             arr = ["selectanoption, Select an Option", "componentfailure, Component Failure", "partinventory,Part Inventory"]
         } else {
-            arr = ["selectanoption, Select an Option", "timetofailure, Time to Failure and/or Symptoms of failure"]
+            arr = ["selectanoption, Select an Option", "timetofailure, Time to Failure/Symptoms of failure"]
         }
 
         for (let element in arr) {
