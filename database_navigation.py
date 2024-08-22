@@ -1,12 +1,12 @@
 import pandas 
 from sklearn import preprocessing as pp
-df = pandas.read_excel("724Ready.xlsx")
+df = pandas.read_excel("Opto-Mechanical_Failure Records_and_Inventory.xlsx")
 compRecords = {}
 mlb = pp.MultiLabelBinarizer()
 
 
 def multiLabelClassification():
-    Y = list(df["Standardized"])
+    Y = list(df["Symptoms"])
     for (k,v) in enumerate(Y):
         if "," in v:
             Y[k] = v.split(",")

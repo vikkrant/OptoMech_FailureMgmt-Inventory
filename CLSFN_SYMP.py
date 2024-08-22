@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 from sklearn import preprocessing
 
-dF = read_excel("724Ready.xlsx")
+dF = read_excel("Opto-Mechanical_Failure Records_and_Inventory.xlsx")
 enc = preprocessing.OrdinalEncoder()
 le = preprocessing.LabelEncoder()
 mlb = preprocessing.MultiLabelBinarizer()

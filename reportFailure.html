@@ -3,6 +3,7 @@
     <head>
         <h1> Report Component Failure</h1>
         <link rel = "stylesheet" href = "indexStyle.css">
+        <link rel = "stylesheet" href = "buttonStyle.css">
     </head>
     <style>
         * {
@@ -79,6 +80,11 @@
           display: block;
           margin-bottom: 10px;
           white-space: nowrap;
+        }
+
+        #theButtonBox {
+          padding-left: 740px;
+          transform: translateY(-30px);
         }
       
       </style>
@@ -161,9 +167,13 @@
                     class="form-input"
                   />
                 </div>
-          
 
             </div>
+        </div>
+        <div id = "theButtonBox">
+          <div id = "submitButton">
+            <button id="theButton" role="button">Go</button>
+          </div>
         </div>
     </body>
 </html>

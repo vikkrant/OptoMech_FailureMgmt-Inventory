@@ -3,7 +3,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn import preprocessing
 
-df = pd.read_excel("724ReadyForPoster.xlsx")
+df = pd.read_excel("Opto-Mechanical_Failure Records_and_Inventory.xlsx")
 enc = preprocessing.OrdinalEncoder()
 X = df[["Hutch", "Serial Number W/O Production Number", "PV Base"]]
 
